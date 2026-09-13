@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy for Media Watchdog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Privacy Policy for Media Watchdog</h1>
+<p class="stand">Last updated: 13 September 2026</p>
+<p class="lang-switch"><a href="https://soccertrash.github.io/media-watchdog-privacy/">Deutsche Fassung</a></p>
+
+<h2>1. Controller</h2>
+<p>The app "Media Watchdog" (Android package name <code>de.pauli.mediawatchdog</code>) is provided by:</p>
+<p>Manfred Pauli<br>
+E-mail: <a href="mailto:soccertrash.dev@gmail.com">soccertrash.dev@gmail.com</a></p>
+
+<h2>2. Summary</h2>
+<ul>
+  <li>Media Watchdog processes <strong>all data exclusively on the device</strong> it is installed on.</li>
+  <li>The app <strong>does not transmit any data</strong> to us or to third parties. It never opens a network connection and contains no analytics, advertising or tracking components.</li>
+  <li>The app <strong>does not read the content of notifications</strong>, even though it requires the Android "Notification access" permission (see section 4).</li>
+  <li>We never have access to any data the app stores on the device.</li>
+</ul>
+
+<h2>3. Purpose of the app</h2>
+<p>Media Watchdog is a parental control tool. A parent installs the app on their own child's device, selects which media apps (for example music streaming, audiobook or video apps) should be monitored, and sets a daily time limit. The app measures how long those apps are actually playing and pauses playback once the limit is reached.</p>
+<p>The app is not intended to monitor another adult's device without their knowledge. After installation it remains visible at all times through its icon in the app drawer.</p>
+
+<h2>4. The "Notification access" permission</h2>
+<p>Android only exposes information about ongoing media playback (so-called media sessions) to apps registered as a notification listener. Media Watchdog therefore needs this permission <strong>solely</strong> to</p>
+<ul>
+  <li>detect whether one of the selected apps is currently playing or paused, and</li>
+  <li>pause playback through the standard system interface when the daily limit is reached.</li>
+</ul>
+<p>The app does <strong>not process any notification content</strong>. It does not read message texts, senders, track titles, artists, playlists or any other metadata of the media being played, and it does not store such information. The only thing evaluated is the "playing" or "not playing" state of the selected apps.</p>
+<p>The permission is never requested silently. The app explains its purpose before directing you to the system settings, and the permission can be revoked there at any time. Without it the app cannot measure anything.</p>
+
+<h2>5. Data the app stores on the device</h2>
+<p>All of the following data is stored exclusively in the app's private storage on the device. It is never sent to us or to third parties and is not included in cloud backups (the app is excluded from Android backup and from data transfer to a new device).</p>
+<table>
+  <thead><tr><th>Data</th><th>Purpose</th><th>Retention</th></tr></thead>
+  <tbody>
+    <tr><td>Playback time in seconds per calendar day</td><td>Comparison with the daily limit, display on the dashboard</td><td>Deleted automatically after 90 days</td></tr>
+    <tr><td>Time at which the limit was reached, plus the date and counter value at the start of the current time window</td><td>Calculating the optional waiting period, avoiding duplicate alerts</td><td>Overwritten with the next time window or the next time the limit is reached, kept until uninstall</td></tr>
+    <tr><td>Package names of apps that have had an active media session on the device</td><td>List of selectable apps in the settings</td><td>Until uninstall</td></tr>
+    <tr><td>Settings chosen by the parent (monitored apps, daily limit, pausing on/off, waiting period)</td><td>Operation of the app</td><td>Until uninstall</td></tr>
+    <tr><td>Parent PIN as a hash (PBKDF2 with a random salt)</td><td>Protecting the settings from being changed by the child</td><td>Until uninstall</td></tr>
+  </tbody>
+</table>
+<p>The PIN itself is never stored in plain text. The counter of failed PIN attempts is kept in memory only and is not persisted.</p>
+
+<h2>6. What the app does not do</h2>
+<ul>
+  <li>No transmission of data to any server, neither ours nor third parties'.</li>
+  <li>No advertising, no analytics services, no crash reporting, no tracking libraries.</li>
+  <li>No location data, no contacts, no camera, no microphone.</li>
+  <li>No recording of which tracks, shows or content are being played.</li>
+  <li>No collection of other apps' notification content.</li>
+  <li>No user accounts, no collection of names, e-mail addresses or device identifiers.</li>
+</ul>
+
+<h2>7. Other system access</h2>
+<ul>
+  <li><strong>Show notifications:</strong> The app shows a notification on the device when the daily limit has been reached. This permission can be denied in the system settings; the app continues to work without it.</li>
+  <li><strong>Visibility of installed apps:</strong> The app checks whether certain well-known media apps are installed in order to display them by name in the selection list. This information never leaves the device.</li>
+</ul>
+
+<h2>8. Children</h2>
+<p>The app is installed and configured by a parent or legal guardian on a child's device. It does not collect personal data that would allow the child to be identified and does not transmit any data. The measured playback time stays on the device, where it is visible to the child as well as to the parents.</p>
+
+<h2>9. Legal basis</h2>
+<p>Insofar as any personal data is processed while using the app, this happens solely on the device and by the user themselves. We as the provider do not process any personal data of users. A legal basis under Art. 6 GDPR for processing by us is therefore not required.</p>
+
+<h2>10. Your rights and deletion</h2>
+<p>Because no data is transmitted to us, we cannot access, correct or delete any data. You can remove all data stored by the app yourself by uninstalling the app or by clearing the app's storage under "Apps" in the Android settings.</p>
+<p>Independently of this, you have the rights granted by the GDPR, in particular the rights of access, rectification, erasure, restriction of processing, data portability and objection, as well as the right to lodge a complaint with a data protection supervisory authority. For any questions, please use the contact address above.</p>
+
+<h2>11. Distribution via Google Play</h2>
+<p>If the app is installed via Google Play, Google processes data in connection with the download and installation according to its own terms. We have no influence over this. Google's privacy policy applies: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+
+<h2>12. Changes to this privacy policy</h2>
+<p>We will update this privacy policy when the app or legal requirements change. The current version is always available at <a href="https://soccertrash.github.io/media-watchdog-privacy/en.html">https://soccertrash.github.io/media-watchdog-privacy/en.html</a>. The date at the top of this page indicates the version.</p>
+
+</body>
+</html>
