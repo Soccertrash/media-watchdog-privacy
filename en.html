@@ -9,7 +9,7 @@
 <body>
 
 <h1>Privacy Policy for Media Watchdog</h1>
-<p class="stand">Last updated: 4 October 2026</p>
+<p class="stand">Last updated: 15 October 2026</p>
 <p class="lang-switch"><a href="https://soccertrash.github.io/media-watchdog-privacy/">Deutsche Fassung</a></p>
 
 <h2>1. Controller</h2>
@@ -48,6 +48,7 @@ E-mail: <a href="mailto:soccertrash.dev@gmail.com">soccertrash.dev@gmail.com</a>
     <tr><td>Package names of apps that have had an active media session on the device</td><td>List of selectable apps in the settings</td><td>Until uninstall</td></tr>
     <tr><td>Settings chosen by the parent (monitored apps, daily limit and waiting period – each uniform or per weekday –, pausing on/off, volume limits with and without headphones)</td><td>Operation of the app</td><td>Until uninstall</td></tr>
     <tr><td>Parent PIN as a hash (PBKDF2 with a random salt)</td><td>Protecting the settings from being changed by the child</td><td>Until uninstall</td></tr>
+    <tr><td>Number of days on which the parent area was opened, number and date of rating requests, whether “Rate this app” has been tapped</td><td>Asking for a rating only rarely (see section 7)</td><td>Until uninstall</td></tr>
   </tbody>
 </table>
 <p>The PIN itself is never stored in plain text. The counter of failed PIN attempts is kept in memory only and is not persisted.</p>
@@ -55,7 +56,7 @@ E-mail: <a href="mailto:soccertrash.dev@gmail.com">soccertrash.dev@gmail.com</a>
 <h2>6. What the app does not do</h2>
 <ul>
   <li>No transmission of data to any server, neither ours nor third parties'.</li>
-  <li>No advertising, no analytics services, no crash reporting, no tracking libraries.</li>
+  <li>No advertising, no analytics services, no crash reporting, no tracking libraries. The only Google library is the one for the Google Play rating dialog (see section 7); it does not add the internet permission.</li>
   <li>No location data, no contacts, no camera, no microphone.</li>
   <li>No recording of which tracks, shows or content are being played.</li>
   <li>No collection of other apps' notification content.</li>
@@ -67,7 +68,8 @@ E-mail: <a href="mailto:soccertrash.dev@gmail.com">soccertrash.dev@gmail.com</a>
   <li><strong>Show notifications:</strong> The app shows a notification on the device when the daily limit has been reached. This permission can be denied in the system settings; the app continues to work without it.</li>
   <li><strong>Visibility of installed apps:</strong> The app checks whether certain well-known media apps are installed in order to display them by name in the selection list. This information never leaves the device.</li>
   <li><strong>Volume and audio output:</strong> To enforce the volume limit set by the parent, the app reads the current media volume and the type of the connected audio output (for example headphones) and lowers the volume to the limit when needed. Neither is stored or transmitted.</li>
-  <li><strong>Rate and recommend the app:</strong> The parent area has the entries “Rate this app” and “Recommend this app”. They only hand the link to the app’s store listing to the Play Store or to Android’s share menu. What happens next is governed by those apps. Media Watchdog itself sends nothing and never asks for a rating on its own.</li>
+  <li><strong>Rate and recommend the app:</strong> The parent area has the entries “Rate this app” and “Recommend this app”. They only hand the link to the app’s store listing to the Play Store or to Android’s share menu. What happens next is governed by those apps. Media Watchdog itself sends nothing.</li>
+  <li><strong>Google Play rating dialog:</strong> Rarely, and only in the parent area after saving, the app asks for a rating through Google Play’s In-App Review interface: no earlier than seven days after installation, once the parent area has been opened on at least three days, then again no earlier than 120 days later, at most three times, and never again after “Rate this app” has been tapped. The dialog is shown by the device’s Play Store app; Google decides whether it appears. Media Watchdog itself transmits no data and does not learn whether or how a rating was given. Any rating submitted is processed by Google under its own privacy policy.</li>
 </ul>
 
 <h2>8. Children</h2>

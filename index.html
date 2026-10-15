@@ -9,7 +9,7 @@
 <body>
 
 <h1>Datenschutzerklärung für Media Watchdog</h1>
-<p class="stand">Stand: 4. Oktober 2026</p>
+<p class="stand">Stand: 15. Oktober 2026</p>
 <p class="lang-switch"><a href="https://soccertrash.github.io/media-watchdog-privacy/en.html">English version</a></p>
 
 <h2>1. Verantwortlicher</h2>
@@ -48,6 +48,7 @@ E-Mail: <a href="mailto:soccertrash.dev@gmail.com">soccertrash.dev@gmail.com</a>
     <tr><td>Paketnamen der Apps, die auf dem Gerät eine aktive Mediensitzung hatten</td><td>Auswahlliste der überwachbaren Apps in den Einstellungen</td><td>Bis zur Deinstallation</td></tr>
     <tr><td>Vom Elternteil gewählte Einstellungen (überwachte Apps, Tageslimit und Wartezeit – jeweils einheitlich oder je Wochentag –, Pausieren an/aus, Lautstärkegrenzen mit und ohne Kopfhörer)</td><td>Funktion der App</td><td>Bis zur Deinstallation</td></tr>
     <tr><td>Eltern-PIN als Hash (PBKDF2 mit zufälligem Salt)</td><td>Schutz der Einstellungen vor Änderung durch das Kind</td><td>Bis zur Deinstallation</td></tr>
+    <tr><td>Anzahl der Tage, an denen der Elternbereich geöffnet wurde, Anzahl und Datum der Bitten um eine Bewertung, ob „App bewerten“ schon einmal angetippt wurde</td><td>Seltene Bitte um eine Bewertung (siehe Abschnitt 7)</td><td>Bis zur Deinstallation</td></tr>
   </tbody>
 </table>
 <p>Die PIN selbst wird zu keinem Zeitpunkt im Klartext gespeichert. Der Zähler für fehlgeschlagene PIN-Eingaben wird nur im Arbeitsspeicher gehalten und nicht dauerhaft gespeichert.</p>
@@ -55,7 +56,7 @@ E-Mail: <a href="mailto:soccertrash.dev@gmail.com">soccertrash.dev@gmail.com</a>
 <h2>6. Was die App nicht tut</h2>
 <ul>
   <li>Keine Übertragung von Daten an Server, weder an uns noch an Dritte.</li>
-  <li>Keine Werbung, keine Analyse-Dienste, keine Absturzberichte, keine Tracking-Bibliotheken.</li>
+  <li>Keine Werbung, keine Analyse-Dienste, keine Absturzberichte, keine Tracking-Bibliotheken. Die einzige Bibliothek von Google ist die für den Bewertungsdialog von Google Play (siehe Abschnitt 7); sie bringt keine Internet-Berechtigung mit.</li>
   <li>Keine Standortdaten, keine Kontakte, keine Kamera, kein Mikrofon.</li>
   <li>Keine Erfassung, welche Titel, Sendungen oder Inhalte abgespielt werden.</li>
   <li>Keine Erfassung von Benachrichtigungsinhalten anderer Apps.</li>
@@ -67,7 +68,8 @@ E-Mail: <a href="mailto:soccertrash.dev@gmail.com">soccertrash.dev@gmail.com</a>
   <li><strong>Benachrichtigungen anzeigen:</strong> Die App zeigt auf dem Gerät eine Benachrichtigung an, wenn das Tageslimit erreicht wurde. Diese Berechtigung kann in den Systemeinstellungen verweigert werden; die App funktioniert dann trotzdem.</li>
   <li><strong>Sichtbarkeit installierter Apps:</strong> Die App prüft, ob bestimmte bekannte Medien-Apps installiert sind, um sie in der Auswahlliste mit Namen anzuzeigen. Diese Information verlässt das Gerät nicht.</li>
   <li><strong>Lautstärke und Audioausgang:</strong> Um die vom Elternteil eingestellte Lautstärkegrenze durchzusetzen, liest die App die aktuelle Medienlautstärke und die Art des verbundenen Audioausgangs (zum Beispiel Kopfhörer) und senkt die Lautstärke bei Bedarf auf die Grenze. Beides wird weder gespeichert noch übertragen.</li>
-  <li><strong>App bewerten und weiterempfehlen:</strong> Im Elternbereich gibt es die Einträge „App bewerten“ und „App weiterempfehlen“. Sie übergeben nur den Link zum Store-Eintrag der App an den Play Store bzw. an das Teilen-Menü von Android. Was danach geschieht, regeln diese Apps. Media Watchdog selbst sendet nichts und fragt nie von sich aus nach einer Bewertung.</li>
+  <li><strong>App bewerten und weiterempfehlen:</strong> Im Elternbereich gibt es die Einträge „App bewerten“ und „App weiterempfehlen“. Sie übergeben nur den Link zum Store-Eintrag der App an den Play Store bzw. an das Teilen-Menü von Android. Was danach geschieht, regeln diese Apps. Media Watchdog selbst sendet nichts.</li>
+  <li><strong>Bewertungsdialog von Google Play:</strong> Selten, und nur im Elternbereich nach dem Speichern, bittet die App über die In-App-Review-Schnittstelle von Google Play um eine Bewertung: frühestens sieben Tage nach der Installation, wenn der Elternbereich an mindestens drei Tagen geöffnet wurde, danach frühestens nach 120 Tagen erneut, höchstens dreimal und nie mehr, nachdem „App bewerten“ angetippt wurde. Den Dialog zeigt die Play-Store-App des Geräts an; ob er erscheint, entscheidet Google. Media Watchdog überträgt dabei selbst keine Daten und erfährt nicht, ob oder wie bewertet wurde. Eine abgegebene Bewertung verarbeitet Google nach seiner eigenen Datenschutzerklärung.</li>
 </ul>
 
 <h2>8. Kinder</h2>
